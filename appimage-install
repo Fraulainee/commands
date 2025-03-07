@@ -1,0 +1,5 @@
+install AppImage
+
+cd /path/to/directory
+chmod +x filename.AppImage
+./filename.AppImage
