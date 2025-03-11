@@ -1,6 +1,6 @@
 # Creating an environment with commands
 
-To create an environment:
+To create an environment
 ```
 conda create --name <my-env>
 ```
