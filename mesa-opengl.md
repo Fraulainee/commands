@@ -12,3 +12,9 @@ Install NVIDIA GL Libraries
 ```
 sudo apt install --reinstall nvidia-driver-535 nvidia-settings nvidia-prime
 ```
+Select nvidia
+```
+sudo prime-select nvidia
+```
+
+reboot
