@@ -16,3 +16,7 @@ To create an environment with a specific version of Python and multiple packages
 ```
 conda create -n myenv python=3.9 scipy=0.17.3 astroid babel
 ```
+Create the environment from the environment.yml file:
+```
+conda env create -f environment.yml
+```
