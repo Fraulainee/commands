@@ -1,0 +1,2 @@
+conda list
+conda env list
