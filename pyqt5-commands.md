@@ -13,3 +13,7 @@ Uninstall PySide2 and shiboken2 --- this causes conflict with pyqt5
 ```
 pip uninstall PySide2 shiboken2 -y
 ```
+convert ui to python pyqt5
+```
+pyuic5 -x splash_art.ui -o ui_splash_art.py
+```
