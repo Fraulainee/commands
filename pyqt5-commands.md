@@ -1,9 +1,16 @@
 # create and compile a resources_rc.py
 
-Compile the .qrc File into resources_rc.py
+Compile the .qrc file into resources_rc.py using PyQt5
 ```
 pyrcc5 -o resources_rc.py resources.qrc
 ```
+
+Compile the .qrc file into resources_rc.py using PySide2
+
+```
+pyside2-rcc resources.qrc -o resources_rc.py
+```
+
 check version
 ```
 pip list | grep -E "PySide2|shiboken2"
