@@ -17,3 +17,8 @@ convert ui to python pyqt5
 ```
 pyuic5 -x splash_art.ui -o ui_splash_art.py
 ```
+
+update PySide2
+```
+pip install --no-cache-dir PySide2 shiboken2
+```
