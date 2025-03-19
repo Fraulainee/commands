@@ -1,5 +1,16 @@
 # Docker commands
 
+check docker list
+```
+docker images -a
+```
+
+run docker image
+```
+docker run -it --name master ros:noetic
+```
+
+
 check if docker 
 ```
 docker pull <image name>
