@@ -26,3 +26,10 @@ Remove docker image
 ```
 docker rmi ros:noetic
 ```
+
+Run the ROS Noetic Container
+```
+docker run -it --rm ros:noetic bash
+```
+  -it → Interactive mode with a terminal.
+  --rm → Automatically removes the container after exiting.
