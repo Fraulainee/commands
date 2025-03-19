@@ -33,3 +33,9 @@ docker run -it --rm ros:noetic bash
 ```
   -it → Interactive mode with a terminal.
   --rm → Automatically removes the container after exiting.
+
+If you want to keep the container running persistently:
+```
+docker run -it --name ros_noetic_container ros:noetic bash
+```
+  --name ros_noetic_container → Names the container for easier reference.
