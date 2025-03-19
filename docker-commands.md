@@ -4,12 +4,19 @@ check docker list
 ```
 docker images -a
 ```
-
-run docker image
+run docker 
 ```
 docker run -it --name master ros:noetic
 ```
 
+check container
+```
+docker ps -a
+```
+execute docker container
+```
+docker exec -it <container id> bash
+```
 
 check if docker 
 ```
