@@ -74,4 +74,19 @@ sudo apt remove --purge -y docker.io
 sudo rm -rf /var/lib/docker
 ```
 
+##  Permission Issue with Docker (permission denied)
+To fix it permanently (so you don’t need sudo every time)
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+```
+Then restart your system or run
+```
+sudo systemctl restart docker
+```
+
+
+
+
 
