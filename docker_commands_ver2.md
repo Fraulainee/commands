@@ -39,3 +39,39 @@ If you want to keep the container running persistently:
 docker run -it --name ros_noetic_container ros:noetic bash
 ```
   --name ros_noetic_container → Names the container for easier reference.
+
+## Find Installed Docker Images and Containers
+List all downloaded Docker images:
+```
+docker images
+```
+Check running containers:
+```
+docker ps
+```
+List all containers (including stopped ones):
+```
+docker ps -a
+```
+
+## Uninstall or Remove ROS Noetic Docker Image
+Stop any running containers using the image:
+```
+docker ps
+docker stop <container_id>
+```
+Remove the container
+```
+docker rm ros_noetic_container
+```
+Remove the Docker image
+```
+docker rmi osrf/ros:noetic-desktop-full
+```
+If you want to completely remove Docker from your system:
+```
+sudo apt remove --purge -y docker.io
+sudo rm -rf /var/lib/docker
+```
+
+
