@@ -29,3 +29,7 @@ update PySide2
 ```
 pip install --no-cache-dir PySide2 shiboken2
 ```
+Install Missing Qt and OpenGL Dependencies
+```
+conda install -n pyqt5-env -c conda-forge pyqt=5.15 pyqtwebengine xorg-libx11 xorg-libxext xorg-xcb-util xorg-xcb-util-wm xorg-libxrender mesa
+```
