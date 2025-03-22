@@ -19,3 +19,7 @@ That means only users in the dialout group can access it.
 ```
 sudo usermod -a -G dialout $USER
 ```
+### Make the device world-readable and writable
+```
+sudo chmod 666 /dev/ttyACM0
+```
