@@ -5,16 +5,16 @@
 python -m venv myenv
 ```
 
-## Activate python venv
+### Activate python venv
 ```
 myenv\Scripts\activate
 ```
-## Install python installer using pip and the required dependencies
+### Install python installer using pip and the required dependencies
 ```
 pip install pyqt5 pyinstaller
 ```
 
-## Create a .spec File (Optional)
+### Create a .spec File (Optional)
 Run this once to generate a .spec file:
 ```
 pyinstaller yourscript.py
@@ -24,7 +24,7 @@ Edit yourscript.spec and add this line under datas=[]:
 datas=[('maingui.ui', '.')],
 ```
 
-##  Build the .exe with PyInstaller
+###  Build the .exe with PyInstaller
 ```
 pyinstaller --onefile --noconsole yourscript.py
 ```
