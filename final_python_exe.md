@@ -43,3 +43,11 @@ or
 ```
 pyinstaller --onefile --add-data "maingui.ui;." rutting.py
 ```
+=======================================================================================================
+
+### Clean previous build
+```
+rmdir /s /q build
+rmdir /s /q dist
+del rutting.spec
+```
