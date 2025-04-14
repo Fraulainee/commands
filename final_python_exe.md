@@ -28,3 +28,7 @@ datas=[('maingui.ui', '.')],
 ```
 pyinstaller --onefile --noconsole yourscript.py
 ```
+If you're including external files, and you edited the .spec file, use:
+```
+pyinstaller yourscript.spec
+```
