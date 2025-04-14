@@ -6,6 +6,7 @@ python -m venv myenv
 ```
 
 ### Activate python venv
+navigate to your directory with the venv
 ```
 myenv\Scripts\activate
 ```
