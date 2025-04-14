@@ -1,3 +1,5 @@
+# Creating python executable from python ui using qt designer
+
 ## Create python venv
 ```
 python -m venv myenv
@@ -7,5 +9,22 @@ python -m venv myenv
 ```
 myenv\Scripts\activate
 ```
+## Install python installer using pip and the required dependencies
+```
+pip install pyqt5 pyinstaller
+```
 
+## Create a .spec File (Optional)
+Run this once to generate a .spec file:
+```
+pyinstaller yourscript.py
+```
+Edit yourscript.spec and add this line under datas=[]:
+```
+datas=[('maingui.ui', '.')],
+```
 
+##  Build the .exe with PyInstaller
+```
+pyinstaller --onefile --noconsole yourscript.py
+```
