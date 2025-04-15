@@ -52,3 +52,9 @@ rmdir /s /q build
 rmdir /s /q dist
 del rutting.spec
 ```
+### Add icon for the exe
+Place it in Your Project Folder
+Add it in PyInstaller Command
+```
+pyinstaller --onefile --noconsole --add-data "maingui.ui;." --icon=appicon.ico rutting.py
+```
