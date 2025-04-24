@@ -6,6 +6,12 @@ if using rosbag
 roscore
 rviz
 ```
+
+### Run all program
+```
+roslaunch stair_detection stair_detector.launch
+```
+
 ### Run xy-plane segmentation
 ```
 rosrun ransac_test ransac_stair_detection.py
