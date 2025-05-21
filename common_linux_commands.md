@@ -23,3 +23,7 @@ sudo usermod -a -G dialout $USER
 ```
 sudo chmod 666 /dev/ttyACM0
 ```
+### Run rosserial
+```
+rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=9600
+```
