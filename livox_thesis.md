@@ -13,8 +13,9 @@ roslaunch stair_detection different_height.launch
 ```
 
 ### Send data to Arduino
+cd to servo_comm directory
 ```
-roslaunch servo_comm servo.launch
+python pixhawk_motors.py
 ```
 
 ======================================================================
