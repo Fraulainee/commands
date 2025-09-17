@@ -14,6 +14,12 @@ roslaunch stair_detection different_height.launch
 
 ### Run pixhawk
 cd to servo_comm directory
+calibrate pixhawk and input 1500 as the stop value
+```
+python pixhawk_motors.py
+```
+
+run pixhawk motors
 ```
 python pixhawk_motors.py
 ```
