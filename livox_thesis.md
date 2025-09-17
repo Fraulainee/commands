@@ -1,5 +1,14 @@
 # HOW TO RUN MY LIVOX SYSTEM
 
+## UPDATE 
+Run stair detection
+```
+roslaunch stair_detection stair_detector.launch
+```
+
+
+
+
 if using rosbag
 ### Run Roscore and Rviz
 ```
