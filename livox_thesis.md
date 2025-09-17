@@ -1,10 +1,23 @@
 # HOW TO RUN MY LIVOX SYSTEM
 
-## UPDATE 
-Run stair detection
+## UPDATE 1.0
+
+### Run stair detection
 ```
 roslaunch stair_detection stair_detector.launch
 ```
+
+### Run different height detection
+```
+roslaunch stair_detection different_height.launch
+```
+
+### Send data to Arduino
+```
+roslaunch servo_comm servo.launch
+```
+
+======================================================================
 
 
 
