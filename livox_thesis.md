@@ -29,6 +29,11 @@ python pixhawk_motors.py
 roslaunch servo_comm servo.launch
 ```
 
+### Updated launch command for different height
+```
+roslaunch stair_detection different_height.launch   min_points_per_band:=12   min_centroid_sep_y:=0.05   min_height_diff:=0.03   z_window:=0.20
+```
+
 ### Launch the different height
 ```
 roslaunch stair_detection different_height.launch \
@@ -37,6 +42,7 @@ roslaunch stair_detection different_height.launch \
   min_height_diff:=0.06 \
   z_window:=0.15
 ```
+
 
 ======================================================================
 
