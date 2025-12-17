@@ -7,8 +7,9 @@
 ### Step 2 : install git
 ```
 sudo apt install git
+```
 
-Step 3 : install the mujoco library
+### Step 3 : install the mujoco library
 
 1. Download the Mujoco library from 
 	https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz
@@ -28,9 +29,13 @@ Step 3 : install the mujoco library
 		./simulate ../model/humanoid.xml
 
 
-Step 4 Install mujoco-py:
+### Step 4 Install mujoco-py:
+```
 	conda create --name mujoco_py python=3.8
+```
+```
 	conda activate mujoco_py
+```
 	sudo apt update
 	sudo apt-get install patchelf
 	sudo apt-get install python3-dev build-essential libssl-dev libffi-dev libxml2-dev  
@@ -42,14 +47,16 @@ Step 4 Install mujoco-py:
 	pip install -r requirements.dev.txt
 
 	pip install -e . --no-cache
+```
 
-Step 5 reboot your machine
+### Step 5 reboot your machine
 
-Step 6 run these commands
+### Step 6 run these commands
+```
 	conda activate mujoco_py
 	sudo apt install libosmesa6-dev libgl1-mesa-glx libglfw3
 	sudo ln -s /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
 	cd
 	cd examples
 	python3 setting_state.py
-	
+```
