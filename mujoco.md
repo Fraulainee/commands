@@ -36,16 +36,31 @@ sudo apt install git
 ```
 	conda activate mujoco_py
 ```
+```
 	sudo apt update
+```
+```
 	sudo apt-get install patchelf
-	sudo apt-get install python3-dev build-essential libssl-dev libffi-dev libxml2-dev  
+```
+```
+	sudo apt-get install python3-dev build-essential libssl-dev libffi-dev libxml2-dev
+```
+```
 	sudo apt-get install libxslt1-dev zlib1g-dev libglew1.5 libglew-dev python3-pip
-	
+```
+```
 	git clone https://github.com/openai/mujoco-py
+```
+```
 	cd mujoco-py
+```
+```
 	pip install -r requirements.txt
+```
+```
 	pip install -r requirements.dev.txt
-
+```
+```
 	pip install -e . --no-cache
 ```
 
