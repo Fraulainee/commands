@@ -2,6 +2,15 @@
 
 ## UPDATE 1.0
 
+### Steps
+1. Check ports
+2. Open rviz
+3. Change frame to ```livox_frame```
+4. Run livox lidar
+5. run stair detection
+6. obstacle topics are separated ```/log_info_left``` and ```/log_info_right```
+
+
 ### Check connected ports
 ```
 sudo ls /dev/ttyACM*
@@ -58,12 +67,6 @@ roslaunch stair_detection different_height.launch \
   z_window:=0.15
 ```
 
-### Steps
-1. Check ports
-2. Open rviz
-3. Change frame to ```livox_frame```
-4. Run livox lidar
-5. run stair detection
 
 ======================================================================
 
