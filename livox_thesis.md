@@ -2,6 +2,16 @@
 
 ## UPDATE 1.0
 
+### Check connected ports
+```
+sudo ls /dev/ttyACM*
+```
+
+### PORTS DESIGNATION
+1. ACM0 - pixhawk
+2. ACM1
+3. ACM2 - arduino
+
 ### Run stair detection
 ```
 roslaunch stair_detection stair_detector.launch
