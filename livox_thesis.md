@@ -12,6 +12,11 @@ sudo ls /dev/ttyACM*
 2. ACM1
 3. ACM2 - arduino
 
+### Run LIVOX
+```
+roslaunch livox_ros_driver2 msg_MID360.launch
+```
+
 ### Run stair detection
 ```
 roslaunch stair_detection stair_detector.launch
