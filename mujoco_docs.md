@@ -114,7 +114,7 @@ This gait is driven by a normalized global phase:
 
 ```python
 global_phase = (t % STEP_PERIOD) / STEP_PERIOD
-
+```
 
 ## Timing parameters
 
@@ -123,3 +123,18 @@ global_phase = (t % STEP_PERIOD) / STEP_PERIOD
 - `OVERLAP = 0.05` extra swing window margin to smooth transitions
 - Swing window length:
 -- swing_window = SWING_PORTION + OVERLAP
+
+## Leg phase offsets (4-beat order)
+A leg’s local phase is:
+```
+local = (global_phase01 - LEG_PHASE[leg]) % 1.0
+```
+
+Offsets:
+- RR: 0.00
+- FR: 0.25
+- RL: 0.50
+- FL: 0.75
+
+This creates the repeating stepping order:
+``` RR → FR → RL → FL ```
