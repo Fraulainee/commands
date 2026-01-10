@@ -1,5 +1,5 @@
 # Installation
-simply follow the mujoco-unitree installation documentation from ```https://github.com/unitreerobotics/unitree_mujoco```
+simply follow the mujoco-unitree installation documentation from (https://github.com/unitreerobotics/unitree_mujoco)
 
 ### Side note :: I installed the dependencies on anaconda env
 
