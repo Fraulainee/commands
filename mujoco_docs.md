@@ -122,7 +122,7 @@ global_phase = (t % STEP_PERIOD) / STEP_PERIOD
 - `SWING_PORTION = 0.32` fraction of each leg cycle spent in swing
 - `OVERLAP = 0.05` extra swing window margin to smooth transitions
 - Swing window length:
--- swing_window = SWING_PORTION + OVERLAP
+   - `swing_window = SWING_PORTION + OVERLAP`
 
 ## Leg phase offsets (4-beat order)
 A leg’s local phase is:
@@ -138,3 +138,61 @@ Offsets:
 
 This creates the repeating stepping order:
 ``` RR → FR → RL → FL ```
+
+
+## Motion Parameters
+### Swing (thigh move + lift)
+
+Front legs:
+- `FRONT_SWING_AMP = -0.30`
+- `FRONT_LIFT_AMP = 0.52`
+
+Rear legs:
+- `REAR_SWING_AMP = -0.26`
+- `REAR_LIFT_AMP = 0.46`
+
+Additional thigh lift coupling:
+- `THIGH_LIFT_AMP = 0.10`
+
+### Stance push (the “engine”)
+
+Rear legs push more:
+- `REAR_STANCE_PUSH = 0.22`
+- `FRONT_STANCE_PUSH = 0.14`
+
+Touchdown hold
+- `TOUCHDOWN_HOLD = 0.06 (fraction of leg cycle)`
+   This adds a short “do nothing” window after swing ends before stance sweep begins.
+
+## Function-by-Function Documentation
+```
+zeros_for_field(msg_cls, field_name, default_len=4)
+```
+
+Attempts to create a zero-filled list matching the true fixed-array length of a dataclass field in Unitree IDL messages.
+
+Why this exists:
+Unitree DDS messages often contain fixed-length arrays (`head`, `sn`, `version`, reserves, etc.). Different SDK builds may enforce those sizes strictly. This helper reduces version mismatch issues.
+
+Returns:
+- a list of zeros of correct length (best effort), else `default_len`
+
+---
+
+`make_motor_cmd() -> MotorCmd_`
+
+Creates a `MotorCmd_` with safe default values and correctly-sized `reserve`.
+
+Used to populate `LowCmd_.motor_cmd` which expects a list of motor command slots.
+
+---
+
+`make_bms_cmd() -> BmsCmd_`
+
+Constructs `BmsCmd_` robustly across SDK versions.
+
+Problem it solves:
+Some versions of `BmsCmd_` require specific constructor fields. This function introspects fields and fills:
+- fixed arrays with zeros
+- sequences with empty lists
+- scalar fields with zero
