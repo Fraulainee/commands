@@ -9,10 +9,10 @@ simply follow the mujoco-unitree installation documentation from (https://github
 - launch ```python3 unitree_mujoco.py```
 
 # Separate terminal, launch the controller
-1. launch env
-2. `cd unitree_mujoco/example/python`
-3. launch ```python3 diagonal_pair_step_lowcmd.py```
-4. files can be found on python folder (https://github.com/Fraulainee/mujoco_examples)
+- launch env
+- `cd unitree_mujoco/example/python`
+- launch ```python3 diagonal_pair_step_lowcmd.py```
+- files can be found on python folder (https://github.com/Fraulainee/mujoco_examples)
 
 ### Visit this link to understand four legged movement
 https://www.youtube.com/watch?v=WrR3fVQ3W3s
