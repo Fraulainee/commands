@@ -114,3 +114,12 @@ This gait is driven by a normalized global phase:
 
 ```python
 global_phase = (t % STEP_PERIOD) / STEP_PERIOD
+
+
+## Timing parameters
+
+- `STEP_PERIOD = 1.20` seconds per full gait cycle
+- `SWING_PORTION = 0.32` fraction of each leg cycle spent in swing
+- `OVERLAP = 0.05` extra swing window margin to smooth transitions
+- Swing window length:
+-- swing_window = SWING_PORTION + OVERLAP
