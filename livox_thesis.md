@@ -45,7 +45,7 @@ python calibrate_pixhawk.py
 
 run pixhawk motors
 ```
-python pixhawk_motors.py
+python pixhawk_motors_updated.py
 ```
 
 ### Send data to arduino
