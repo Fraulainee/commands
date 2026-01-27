@@ -47,6 +47,10 @@ run pixhawk motors
 ```
 python pixhawk_motors_updated.py
 ```
+### Run ROS serial
+```
+rosrun rosserial_python serial_node.py _port:=/dev/ttyACM2 _baud:=57600
+```
 
 ### Send data to arduino
 ```
