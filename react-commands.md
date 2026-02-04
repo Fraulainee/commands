@@ -1,8 +1,11 @@
-# Create a new React app
-npx create-react-app my-dashboard
+# Create a new Vite project
+npm create vite@latest my-dashboard -- --template react
 
 # Navigate into the project
 cd my-dashboard
 
-# Start the development server
-npm start
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
